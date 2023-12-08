@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Gilroy';
+}
+
+html,body{
+width: 100%;
+height: 100%;
+}
+
+body{
+    /* background: linear-gradient(to bottom, #192133, #111826); */
+    background: rgb(15, 19, 31);
+}
+nav{
+    padding: 20px 15px;
+    /* background-color: linear-gradient(to bottom, #141b29, #0c111b 300px); */
+    background-color: #131927;
+    padding: 0px 30px;
+}
+nav .container{
+    display: flex;
+    justify-content:start;
+    align-items:center;
+    gap: 20px;
+    padding: 15px 20px;
+}
+.container ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.777);
+}
+.container a #logo {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    margin-left: -20px;
+    margin-top: -5px;
+}
+.container a:hover{
+    color: white;
+}
+.container ul #kids_img img{
+    width: 38px;
+    height: auto;
+    object-fit: cover;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    margin-left: -10px;
+    gap: 2px;
+}
+.icon-wrapper .line {
+    width: 18px;
+    height:2.5px;
+    background: whitesmoke;
+    display: block;
+}
+#nav_inp_btn{
+    display: flex;
+    gap: 10px;
+    margin-left: 480px;
+}
+input{
+    color: white;
+    background-color: #192133;
+    border:none;
+    border-bottom: 1px solid;
+    padding: 4px 10px;
+}
+
+#nav_inp_btn i{
+    /* border-bottom: 1px solid white;
+    margin-left: -10px; */
+    padding: 5px 0px;
+    color: white;
+}
+#btn_sub{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+#btn_sub button{
+    background-color: dodgerblue;
+    border-radius: 5px;
+    padding: 4px 15px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+#btn_sub p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* html.default {
+    --BRAND_BLUE: #1f80e0;
+    --BRAND_RED: #f15151;
+    --BRAND_ORANGE: #db882a;
+    --BG_GRADIENT_L0: linear-gradient(to bottom, #141b29, #0c111b 300px);
+    --BG_GRADIENT_L1: linear-gradient(to bottom, #192133, #111826);
+    --BG_GRADIENT_L2: linear-gradient(to bottom, #334366, #334366, #1c2940);
+    --CARD_GRADIENT: #030b17;
+    --HEADER_COLOR: #121926;
+    --BG_COLOR_L0: #0c111b;
+    --BG_COLOR_L1: #192133;
+    --BG_COLOR_L2: #334366;
+    --BG_COLOR_L3: rgba(144, 153, 153, 0.1);
+    --BG_COLOR_L4: #1b1f20;
+    --BORDER_COLOR_L0: #2e3333;
+    --TEXT_COLOR_L0: #fff;
+    --TEXT_COLOR_L1: rgba(255, 255, 255, 0.8);
+    --TEXT_COLOR_L2: rgba(255, 255, 255, 0.6);
+    --TEXT_COLOR_L3: #dadada;
+    --TEXT_COLOR_L4: #909999;
+    --TEXT_COLOR_L5: #f9f9f9;
+    --TEXT_LINK_COLOR: #1f80e0;
+    --TEXT_BTN_COLOR: #1f80e0;
+} */
+
+/* slider */
+#slider_sec{
+    padding: 20px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.loader {
+    display: flex;
+    top: 0;
+    height: 450px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    width: 95%;
+    border-radius: 5px;
+    /*padding: 20px;*/
+    overflow: hidden;
+}
+.img_slide{
+    display: flex;
+    flex: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.desc_slide{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    flex: 50%;
+    padding: 50px;
+}
+.desc_slide h2{
+    margin-bottom: 10px;
+}
+.desc_slide p{
+    width: 500px;
+}
+.video-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 30px;
+}
+#video-card{
+    width: 300px;
+    overflow: hidden;
+
+}
+#video-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Movie section */
+#movies_sec {
+    display: flex;
+    justify-content:center;
+    /* align-items:center; */
+    margin-left: 30px;
+    flex-direction: column;
+}
+
+#movies_sec h2{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: white;
+}
+.movie-container{
+    /* background: #fff; */
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+
+}
+
+
+.movie-card{
+    width: 150px;
+    height: 190px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.movie-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+#footer{
+    background-color: #131927;
+    padding: 30px 30px;
+    color: white;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+#footer .text-footer{
+    display: flex;
+    flex: 60%;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 12px;
+}
+#footer .text-footer ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.text-footer ul li:hover{
+    color: dodgerblue;
+}
+#footer .link-footer{
+    display: flex;
+    flex: 40%;
+    justify-content: space-between;
+    gap: 50px;
+}
+#footer .link-footer a, i{
+    text-decoration: none;
+    border: none;
+}
+#social-btn i{
+    font-size: 45px;
+    color: #1f2941;
+}
+#social-btn i:hover{
+    color: dodgerblue;
+}
+.social-btn .btn-g-a{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+}
+
+
+#app-btn{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    gap: 5px;
+}
+#app-btn #button:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+#footer #app-btn button{
+    padding: 2px 10px;
+    font-weight: bolder;
+    background-color: #1f2941;
+    width: 140px;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+#app-btn .btn-g-a{
+    display: flex; 
+    gap: 10px;
+}
+#app-btn span{
+    font-weight: bold;
+    color: #b9b4b4;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+#footer #app-btn button i{
+    font-size: 16px;
+    border: none;
+   
+}
+#button p{
+    /* margin-left: 20px; */
+    text-align: center;
+}
+
